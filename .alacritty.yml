@@ -16,7 +16,6 @@ font:
 #    family: 'MesloLGS Nerd Font Mono'
 #    style: Bold Italic
   size: 11
-background_opacity: 1.0
 # Live config reload (changes require restart)
 live_config_reload: true
 # https://github.com/alacritty/alacritty/wiki/Color-schemes
@@ -139,3 +138,9 @@ scrolling:
 
 use_thin_strokes: true
 
+shell:
+  program: /bin/zsh
+  args:
+   - -l
+   - -c
+   - "tmux attach || tmux"
